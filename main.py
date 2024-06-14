@@ -29,7 +29,7 @@ def omikuji():
         "小凶",
         "大凶",
     ]
-    return omikuji_list[Random.randrange(10)]
+    return omikuji_list[Random.randrange(0,7)]
 
 @app.post("/areaOfCircle/")
 async def calcAreaOfCircle(circle: AreaOfCircle):
