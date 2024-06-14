@@ -3,7 +3,7 @@ from typing import Optional
 from fastapi import FastAPI
 from random import Random
 from pydantic import BaseModel
-from fastapi import HTMLResponse
+from fastapi.responses import HTMLResponse
 
 class AreaOfCircle(BaseModel):
     r: float
