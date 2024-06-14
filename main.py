@@ -22,11 +22,6 @@ def index():
         <head>
             <meta charset="utf-8">
             <title>こんにちは！</title>
-            p#ehehe{
-                background-color: #ffffff;
-                color: #000000;
-                font-size: 1.5rem;
-            }
         </head>
         <body>
         <p>
