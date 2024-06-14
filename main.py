@@ -19,6 +19,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/omikuji")
 def omikuji():
+    random_number = Random()
     omikron_list = [
         "大吉",
         "中吉",
@@ -29,7 +30,7 @@ def omikuji():
         "小凶",
         "大凶",
     ]
-    return omikron_list[Random.randint(0,7)]
+    return omikron_list[random_number.randint(0,7)]
 
 @app.post("/areaOfCircle/")
 async def calcAreaOfCircle(circle: AreaOfCircle):
